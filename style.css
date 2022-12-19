@@ -1,0 +1,118 @@
+h1 {
+  color: black;
+  font-size: 40px;
+  margin-left: 500px;
+}
+h3 {
+  color: brown;
+}
+b {
+  font-size: 18px;
+}
+u {
+  color: tomato;
+}
+.anim {
+  height: 150px;
+  width: 250px;
+  margin-left: 200px;
+  background-color: red;
+  animation-name: anim;
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes anim {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+/* index3page */
+.container {
+  display: flex;
+  height: 120px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.logo {
+  font-style: italic;
+  font-weight: 800;
+  font-size: 27px;
+  margin-left: 32px;
+}
+.nav {
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+  gap: 20px;
+}
+a {
+  text-decoration: none;
+}
+.font {
+  font-family: "Rubik Gemstones", cursive;
+}
+button {
+  background-color: brown;
+  padding: 0px;
+}
+button:hover {
+  height: 50px;
+  width: 100px;
+  background-color: red;
+  filter: drop-shadow(12px 10px 3px black);
+}
+.circle {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background-color: rgb(26, 26, 178);
+}
+/* index4start */
+.box {
+  background-image: url(./career.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 864px;
+  width: 1575px;
+  align-items: center;
+}
+.box2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.crd {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.card {
+  height: 200px;
+  width: 200px;
+  background-color: brown;
+}
+.card:hover {
+  filter: drop-shadow(12px 10px 3px black);
+}
+@media (250px <= width <= 500px) {
+  .crd {
+    flex-direction: column;
+  }
+  button {
+    background-color: tomato;
+  }
+}
+@media (500px <= width <= 500px) {
+  .crd {
+    flex-direction: column;
+  }
+  button {
+    background-color: chocolate;
+  }
+}
